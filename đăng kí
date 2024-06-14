@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Trang đăng ký</title>
+	<style>
+		body {
+			background-color: white;
+		}
+		input[type=text], input[type=password], input[type=email] {
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			display: inline-block;
+			border: 1px solid #ccc;
+			box-sizing: border-box;
+			border-radius: 4px;
+		}
+		button[type=button] {
+			background-color: white;
+			color: red;
+			padding: 14px 20px;
+			margin: 8px 0;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			width: 100%;
+		}
+		button[type=submit]:hover {
+			background-color: white;
+		}
+		.container {
+			padding: 16px;
+			background-color: orangered;
+			color: white;
+			border-radius: 5px;
+			margin-top: 50px;
+			margin-left: auto;
+			margin-right: auto;
+			width: 50%;
+		}
+		header {
+			background-color: orangered;
+			color: white;
+			padding: 10px;
+			text-align: center;
+			font-size: 30px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Trang đăng ký</h1>
+	</header>
+	<div class="container">
+		<form>
+			<label for="username">Tên đăng nhập:</label><br>
+			<input type="text" id="username" name="username"><br>
+			<label for="email">Email:</label><br>
+			<input type="email" id="email" name="email"><br>
+			<label for="password">Mật khẩu:</label><br>
+			<input type="password" id="password" name="password"><br><br>
+			<button type="button" id="register">Đăng ký</button>
+			<button type="button" id="back" onclick="history.back()">Trở về</button>
+		</form>
+	</div>
+</body>
+</html>
