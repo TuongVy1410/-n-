@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Trang đăng nhập</title>
+	<style>
+		body {
+			background-color: white;
+		}
+
+		input[type=text],
+		input[type=password],
+		input[type=email] {
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			display: inline-block;
+			border: 1px solid #ccc;
+			box-sizing: border-box;
+			border-radius: 4px;
+		}
+
+		button[type=button] {
+			background-color: white;
+			color: red;
+			padding: 14px 20px;
+			margin: 8px 0;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			width: 100%;
+		}
+
+		button[type=submit]:hover {
+			background-color: white;
+		}
+
+		.container {
+			padding: 16px;
+			background-color: orangered;
+			color: white;
+			border-radius: 5px;
+			margin-top: 50px;
+			margin-left: auto;
+			margin-right: auto;
+			width: 50%;
+		}
+
+		header {
+			background-color: orangered;
+			color:white;
+			padding: 10px;
+			text-align: center;
+			font-size: 30px;
+			font-family: "Verdana, Geneva, sans-serif, Tahoma";
+		}
+
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: white
+		}
+
+		li {
+			float: left;
+		}
+
+		li a {
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+
+		li a:hover {
+			background-color: orangered;
+		}
+		
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: orangered;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<h1>Trang đăng nhập</h1>
+		<ul>
+			<li><a href="homepage.html">Trang chủ</a></li>
+		</ul>
+	</header>
+	
+	<div class="container">
+		<form>
+			<label for="username">Tên đăng nhập:</label><br>
+			<input type="text" id="username" name="username"><br>
+			<label for="email">Email:</label><br>
+			<input type="email" id="email" name="email"><br>
+			<label for="password">Mật khẩu:</label><br>
+			<input type="password" id="password" name="password"><br><br>
+			<button type="button" id="signin">Đăng nhập</button>
+			<button type="button" id="resigt" onclick="window.location.href='dangky.html'">Đăng ký</button>
+		</form>
+	</div>
+</body>
+
+</html>
